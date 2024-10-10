@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script> 
+<title>DOM Практическая работа</title>
+</head>
+<body>
+    <h1>Отдых</h1>
+<p>Путешествие по России</p>
+<ul>
+  <ul id="taskList">
+    <li>Памятники архитектуры</li>
+    <li>Природа</li>
+</ul>
+
+<button id="addTaskButton">Добавить новый абзац</button>
+<button id="elem">Удалить новый абзац</button>
+</ul>
+
+<li> Животные</li>
+
+<li>Реки</li>
+<div id="todoApp">
+    <input type="text" id="newTask" placeholder="Добавить задачу">
+    <button id="addTask">Добавить</button>
+    <ul id="todoList">
+        <!-- Задачи будут добавляться сюда -->
+    </ul>
+</div>
+<!-- <form>
+    <label for='name'>Волга</label>
+    <input type="text" id="name">
+    <button type="submit1" id="submit1">Submit1</button>
+  </form> -->
+
+  <button onclick="changeURL()">Изменить адрес</button>
+  <a href="https://ya.ru/" id="yandex">Yandex</a>
+  <script>
+    function changeURL(){
+    document.getElementById("yandex").href="https://google.com";
+    }</script>
+
+<button onclick="changeURL_1()">Изменить текст</button>
+<a href="https://ya.ru/" id="yandex1">Yandex</a>
+<script>
+    function changeURL_1(){
+    document.getElementById("yandex1").innerHTML ="Новый текст";
+    }
+    </script>
+    <div id="example" style="border:1px solid black;">Первый пример</div>
+
+    <button onclick="(document.getElementById('example').style.display='none')">Скрой блок - нажми на меня</button>
+    <div id="example_1" style="border:1px solid black; display:none;">Второй пример</div>
+
+<button onclick="(document.getElementById('example_1').style.display='block')">Нажми и покажи блок при клике!</button>
+
+
+<img src="images/pri.jpg" "Width="300" Height="200" alt="Красивое фото">
+</body>
+</html>
